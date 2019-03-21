@@ -1,0 +1,26 @@
+{
+  "name": "orangeth-test-api",
+  "version": "1.0.0",
+  "description": "A test CRUD API using Lamda Functions for Orange Theory ",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iosvanyd1/crud_api_serverless.git"
+  },
+  "author": "Iosvany Dalmau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iosvanyd1/crud_api_serverless/issues"
+  },
+  "homepage": "https://github.com/iosvanyd1/crud_api_serverless#readme",
+  "dependencies": {
+    "aws-sdk": "^2.425.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3"
+  }
+}
