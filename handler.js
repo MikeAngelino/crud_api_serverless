@@ -6,37 +6,37 @@ const todosReadOne = require('./api/users/functions/users-read-one.js');
 const todosUpdate = require('./api/users/functions/users-update.js');
 const todosDelete = require('./api/users/functions/users-delete.js');
 
-module.exports.create = (event, context) => {
+module.exports.create = (event, context, callback) => {
 	todosCreate(event, (result) => {
-		context.succeed(result);
+		callback(null, result);
 	});
 };
 
-module.exports.readAll = (event, context) => {
+module.exports.readAll = (event, context, callback) => {
 	todosReadAll(event, (result) => {
-		context.succeed(result);
+		callback(null, result);
 	});
 };
 
-module.exports.readOne = (event, context) => {
+module.exports.readOne = (event, context, callback) => {
 	todosReadOne(event, (result) => {
-		context.succeed(result);
+		callback(null, result);
 	});
 };
 
-module.exports.update = (event, context) => {
+module.exports.update = (event, context, callback) => {
 	todosUpdate(event, (result) => {
-		context.succeed(result);
+		callback(null, result);
 	});
 };
 
-module.exports.delete = (event, context) => {
+module.exports.delete = (event, context, callback) => {
 	todosDelete(event, (result) => {
-		context.succeed(result);
+		callback(null, result);
 	});
 };
 
-module.exports.notFound = ( event, context) => {
+module.exports.notFound = ( event, context, callback) => {
 	const response = {
 		statusCode: 404,
 		headers: {
@@ -45,5 +45,5 @@ module.exports.notFound = ( event, context) => {
 		body: JSON.stringify({"message": "Not Found"})
 	};
 
-	context.succeed(response);
+	callback(null, response);
 };

@@ -18,7 +18,7 @@ module.exports = (event, callback) => {
         headers: {
           "Access-Control-Allow-Origin" : "*"
         },
-        body: JSON.stringify({"message" : "Unable to remove user"})
+        body: JSON.stringify({message : "Unable to remove user"})
       };
       callback(response);
     }
@@ -27,7 +27,7 @@ module.exports = (event, callback) => {
       headers: {
         "Access-Control-Allow-Origin" : "*"
       },
-      body: JSON.stringify({"message" : "User Removed"})
+      body: JSON.stringify({message : "User Removed"})
     };
     callback(response);
 	});

@@ -15,7 +15,7 @@ module.exports = (event, callback) => {
 				headers: {
 					"Access-Control-Allow-Origin" : "*"
 				},
-				body: JSON.stringify({"message" : "Unable to get users"})
+				body: JSON.stringify({message : "Unable to get users"})
 			};
 			callback(response);
 		}

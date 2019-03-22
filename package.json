@@ -4,7 +4,7 @@
   "description": "A test CRUD API using Lamda Functions for Orange Theory ",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "eslint": "^5.15.3"
+    "chai": "^4.2.0",
+    "dynalite": "^2.2.0",
+    "eslint": "^5.15.3",
+    "mocha": "^6.0.2"
   }
 }
