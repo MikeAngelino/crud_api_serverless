@@ -35,7 +35,7 @@ module.exports = (event, callback) => {
 				headers: {
 					"Access-Control-Allow-Origin" : "*"
 				},
-				body: JSON.stringify({"message" : "Unable to Create User"})
+				body: JSON.stringify({message : "Unable to Create User"})
 			};
 			callback(response);
 		}
@@ -44,7 +44,7 @@ module.exports = (event, callback) => {
 			headers: {
 				"Access-Control-Allow-Origin" : "*"
 			},
-			body: JSON.stringify({"message" : "User Created"}),
+			body: JSON.stringify({message : "User Created"}),
 		};
 		callback(response);
 	});
